@@ -1,0 +1,204 @@
+/* Custom Variables */
+:root {
+    --primary-color: #2C2C2C;
+    --secondary-color: #2C2C2C;
+}
+
+/* Add at the top of your CSS file */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Adjust scroll offset for fixed header */
+section {
+    scroll-margin-top: 76px; /* Height of your fixed navbar */
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #e65d00;
+    border-color: #e65d00;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080') no-repeat center center;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-80 {
+    min-height: 80vh;
+}
+
+/* Services Section */
+.services .card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.services .card:hover {
+    transform: translateY(-5px);
+}
+
+.services .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.services .card-title {
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.services .card-text {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #fff;
+    position: relative;
+}
+
+.about-us .section-tag span {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.about-us h2 {
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.about-us .about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-us .btn-warning {
+    color: #fff;
+    font-weight: 600;
+}
+
+.about-us .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+/* Responsive adjustments for About Us */
+@media (max-width: 991.98px) {
+    .about-us h2 {
+        font-size: 2rem;
+    }
+    
+    .about-us .about-image {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .about-us .d-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #f8f9fa;
+}
+
+.contact-section h2 {
+    color: var(--primary-color);
+}
+
+.contact-info {
+    color: #333;
+}
+
+.contact-info a {
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--primary-color) !important;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    display: block;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments for Contact Section */
+@media (max-width: 991.98px) {
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+    
+    .map-container {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .map-container iframe {
+        height: 300px;
+    }
+}
