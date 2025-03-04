@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAKS GRAD</title>
+    <title>MAKS GRAD - Gradbeništvo in urejanje okolice</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -12,107 +12,160 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-            <a class="navbar-brand" href="#">MAKS GRAD</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-us">O nas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Storitve</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-section">Kontakt</a>
-                    </li>
-                </ul>
+<!-- Top Info Bar -->
+<div class="top-info-bar">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="contact-info d-none d-lg-flex">
+                <a href="tel:+38651253870" class="info-link">
+                    <i class="fas fa-phone"></i>
+                    +386 51 253 870
+                </a>
+                <a href="mailto:maks.bukovsek@gmail.com" class="info-link">
+                    <i class="fas fa-envelope"></i>
+                    maks.bukovsek@gmail.com
+                </a>
+                <a href="https://maps.app.goo.gl/iFG2cmxQHUBJWyADA" target="_blank" class="info-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Zgornja Hudinja 34, 3000 Celje
+                </a>
+            </div>
+            <div class="social-info">
+                <a href="https://www.facebook.com/profile.php?id=61568622763759" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                    maksgrad
+                </a>
             </div>
         </div>
-    </nav>
+    </div>
+</div>
+
+<!-- Main Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="MAKS GRAD" class="logo" aria-label="Company Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-us">O nas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Storitve</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#rent">Najem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Galerija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontakt</a>
+                    <!-- <a class="nav-link contact-btn" href="#contact">Kontakt</a> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
     <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero.jpg') no-repeat center center; background-size: cover;">
+    <section class="hero">
         <div class="container">
-            <div class="row min-vh-80 align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 text-white fw-bold">BUILDING DREAMS,<br>CRAFTING FUTURES:</h1>
-                    <h2 class="text-white mb-4">YOUR TRUSTED CONSTRUCTION PARTNER!</h2>
-                    <p class="text-white mb-4">Creating a solid and memorable future is crucial for marketing course services. Here are some tagline ideas.</p>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">Gradimo kakovost</span><br>
+                    in urejeno okolje —<br>
+                    z izkušnjami in predanostjo
+                </h1>
+                
+                <p class="hero-description">
+                    V podjetju MASK GRAD se osredotočamo na trajnostne in estetske rešitve. 
+                    Z dolgoletnimi izkušnjami smo vaš zanesljiv partner pri gradnji in urejanju okolice.
+                </p>
+                
+                <div class="hero-cta">
+                    <p class="hero-cta-text">Pridružite se nam na poti do odličnosti!</>
                 </div>
             </div>
         </div>
+        <div class="overlay"></div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">Nase storitve</h2>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h2 class="fw-bold">Naše storitve</h2>
             </div>
 
             <div class="row g-4">
-                <!-- General Contracting -->
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="images/dvigovanje.jpg" class="card-img-top" alt="General Contracting">
+                        <img src="images/services/dvigovanje-bremen.jpg" class="card-img-top" alt="General Contracting">
                         <div class="card-body">
                             <h5 class="card-title">Dvigovanje bremen</h5>
+                            <p class="card-text">
+                                Nudimo strokovno dvigovanje bremen s sodobno opremo. Naša ekipa je usposobljena za varno in učinkovito dvigovanje težkih tovorov,
+                                kar zagotavlja hitro in brezskrbno premikanje vaših materialov.</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Design Build -->
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="images/izkop.jpg" class="card-img-top" alt="Design Build">
+                        <img src="images/services/izkopi.jpg" class="card-img-top" alt="Design Build">
                         <div class="card-body">
                             <h5 class="card-title">Izkopi</h5>
+                            <p class="card-text">
+                                Specializirani smo za različne vrste izkopov, vključno z izkopi za temelje, gradbene projekte in drenažne sisteme. Uporabljamo vrhunsko
+opremo, ki zagotavlja natančnost in varnost pri delu.</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Construction Management -->
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="images/prevoz.jpg" class="card-img-top" alt="Construction Management">
+                        <img src="images/services/prevoz-materiala.jpg" class="card-img-top" alt="Construction Management">
                         <div class="card-body">
-                            <h5 class="card-title">Prevoz in dovoz materiala</h5>
+                            <h5 class="card-title">Prevoz materiala</h5>
+                            <p class="card-text">
+                                Nudimo zanesljiv prevoz in dostavo vseh vrst gradbenih materialov. Naša logistika omogoča hitro in učinkovito dostavo, da vaše delo
+poteka brez zamud.</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Structural Engineering -->
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="images/rusitve.jpg" class="card-img-top" alt="Structural Engineering">
+                        <img src="images/services/rusenje.jpg" class="card-img-top" alt="Structural Engineering">
                         <div class="card-body">
-                            <h5 class="card-title">Rusitve</h5>
+                            <h5 class="card-title">Rušenje</h5>
+                            <p class="card-text">
+                                Naša ekipa izvaja rušitvena dela z največjo pozornostjo do varnosti in okolja. Imamo izkušnje z rušenjem različnih struktur, pri čemer
+uporabljamo moderne tehnike in opremo.</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Land Development -->
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="images/priprava-dvorisc.jpg" class="card-img-top" alt="Land Development">
+                        <img src="images/services/priprava-dvorisc.jpg" class="card-img-top" alt="Land Development">
                         <div class="card-body">
                             <h5 class="card-title">Priprava dvorišč</h5>
+                            <p class="card-text">
+                                Poskrbimo za celovito pripravo dvorišč, ki vključuje niveliranje terena, sajenje rastlin, postavitev tlakovcev in druge zunanje ureditve.
+Naša ekipa bo poskrbela, da bo vaše dvorišče estetsko in funkcionalno.</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Demolition -->
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="images/podporni-zidovi.jpg" class="card-img-top" alt="Demolition">
+                        <img src="images/services/podporni-zidovi.jpg" class="card-img-top" alt="Demolition">
                         <div class="card-body">
                             <h5 class="card-title">Podporni zidovi</h5>
+                            <p class="card-text">
+                                Gradimo trdne in estetsko privlačne podporne zidove, ki preprečujejo erozijo tal in zagotavljajo stabilnost. Naša strokovna ekipa poskrbi
+za ustrezno načrtovanje in izvedbo.</p>
                         </div>
                     </div>
                 </div>
@@ -132,11 +185,173 @@
                     </div>
                 </div>
             </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="stat-number">400+</div>
+                    <div class="stat-label">ZAKLJUČENIH PROJEKTOV</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number">20000+</div>
+                    <div class="stat-label">DELOVNIH UR</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">ZADOVOLJNIH STRANK</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rent Section -->
+    <section id="rent" class="gallery py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Najem</h2>
+                <p class="text-muted">Upravljamo z različno vrsto gradbene opreme in gradbenih strojev, vključno z bagri, dempera, valjarji, vibro ploščami, vibro najbijač,
+                    kronsko vrtanje ter vso drugo orodje.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/demper-5000.jpeg" alt="Demper 5000" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Demper 5000kg 2.5m<sup>2</sup></h3>
+                                <p>Možnost stranksega kipanja</p>
+                                <!-- <a href="#" class="btn btn-light">Več informacij</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/demper-3000.jpeg" alt="Demper 3000" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Demper 3000kg 1m<sup>2</sup></h3>
+                                <p>Možnost stranksega kipanja</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/bager-takeuchi-tb2010.jpeg" alt="Bager TAKEUCHI TB2010" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Bager TAKEUCHI TB2010</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/bager-takeuchi-tb216.jpeg" alt="Bager TAKEUCHI TB216" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Bager TAKEUCHI TB216</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/bager-takeuchi-tb230.jpeg" alt="Bager TAKEUCHI TB230" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Bager TAKEUCHI TB230</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/bager-takeuchi-tb235.jpg" alt="Bager TAKEUCHI TB235" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Bager TAKEUCHI TB235</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/bager-takeuchi-tb250.jpg" alt="Bager TAKEUCHI TB250" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Bager TAKEUCHI TB250</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/bager-takeuchi-tb290.jpeg" alt="Bager TAKEUCHI TB290" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Bager TAKEUCHI TB290</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/valjar.jpeg" alt="Valjer" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Valjar</h3>
+                                <p>Možnost najema od 600kg do 3,5 tone</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/vibro.jpg" alt="Vibro" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Vibro</h3>
+                                <p>Plošče od 80 kg do 500kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/vibro-nabijac-zaba.jpg" alt="Vibro" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Vibro najbijač-žaba</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/rent/udarno-kladivo.jpg" alt="Udarno kladivo" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Udarno kladivo</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact-section" class="contact-section py-5">
+    <section id="contact" class="contact-section py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-4">
@@ -155,19 +370,19 @@
                             <p class="mb-1">Pošljite nam lahko e-mail ali uporabite direkten kontakt.</p>
                             <p class="mb-1">
                                 <strong>E-pošta: </strong>
-                                <a href="mailto:maks.bukovsek@gmail.com" class="text-warning text-decoration-none">
+                                <a href="mailto:maks.bukovsek@gmail.com" class="text-decoration-none">
                                     maks.bukovsek@gmail.com
                                 </a>
                             </p>
                             <p class="mb-1">
                                 <strong>Telefon: </strong>
-                                <a href="tel:041637273" class="text-warning text-decoration-none">
+                                <a href="tel:041637273" class="text-decoration-none">
                                     041 637 273 (Maks)
                                 </a>
                             </p>
                             <p class="mb-1">
                                 <strong>GSM: </strong>
-                                <a href="tel:070718550" class="text-warning text-decoration-none">
+                                <a href="tel:070718550" class="text-decoration-none">
                                     070 718 550 (Andraž)
                                 </a>
                             </p>
@@ -191,7 +406,6 @@
             </div>
         </div>
     </section>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
